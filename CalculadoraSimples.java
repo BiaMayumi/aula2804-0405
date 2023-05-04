@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.text.html.parser.Element;
+
 public class CalculadoraSimples {
     public static void main(String[] args) {
 
@@ -14,9 +16,9 @@ public class CalculadoraSimples {
         System.out.println("1. Soma");
         System.out.println("2. Subtração");
         System.out.println("3. Sair");
-        System.out.println("Opção: ");
 
-    op = entrada.nextInt();
+        System.out.println("Opção: ");
+        op = entrada.nextInt();
 
     if(op == 1){
         System.out.println("\n\t\t\t -- Soma --\n");
@@ -31,7 +33,7 @@ public class CalculadoraSimples {
         total = n1 +n2;
 
         //Saída
-        System.out.printf("%d + %d = %d , n1, n2, total");
+        System.out.printf("%d + %d = %d" , n1, n2, total);
         
 
     } else if(op == 2){
