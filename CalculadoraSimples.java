@@ -14,7 +14,7 @@ public class CalculadoraSimples {
     do{ 
         System.out.println("\n\t\t\t -- Calculadora Simples -- \n");
         System.out.println("1. Soma");
-        System.out.println("2. Subtração");
+        System.out.println("2. Divisão");
         System.out.println("3. Sair");
 
         System.out.println("Opção: ");
@@ -35,9 +35,22 @@ public class CalculadoraSimples {
         //Saída
         System.out.printf("%d + %d = %d" , n1, n2, total);
         
+        } else if (op == 2) {
+                System.out.println("\n\t\t\t -- Divisão -- \n");
 
-    } else if(op == 2){
-        System.out.println("\n\t\t\t -- Subtração --\n");
+                //Gabrielli
+                // Entrada
+                System.out.println("Informe n1");
+                n1 = entrada.nextInt();
+                System.out.println("Informe n2");
+                n2 = entrada.nextInt();
+
+                // Processamento
+                total = n1 / n2;
+
+                // Saida
+                System.out.printf("%d / %d = %d", n1, n2, total);
+        
     }else if(op == 3){
         System.out.println("Forte Abraço!");
     }else{
@@ -46,9 +59,8 @@ public class CalculadoraSimples {
 
     
 }while(op!=3);
-
-
-
-
-}
+        
+   
+    }
+    
 }
